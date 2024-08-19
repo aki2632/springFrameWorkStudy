@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="test.com.mysqlmember"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="test.com.member"/>
+			<item value="oracle"/>
+			<item value="endRow"/>
+			<item value="EUC-KR"/>
+			<item value="UTF-8"/>
+			<item value="// TODO Auto-generated method stub"/>
+			<item value="logger."/>
+			<item value="test.com.board.BoardVO"/>
+			<item value="test.com.board.comments.CommentsVO"/>
+			<item value="test.com.member.MemberVO"/>
+			<item value="id=&quot;"/>
+			<item value="log.info(vo);"/>
+			<item value="System.out.println"/>
+			<item value="member"/>
+			<item value="MemberVO"/>
+		</list>
+		<list key="replacehistory">
+			<item value="test.com.mysqlmember"/>
+			<item value="mysql"/>
+			<item value="pageBlock"/>
+			<item value="UTF-8"/>
+			<item value=""/>
+			<item value="log.info(&quot;insert()....&quot;);"/>
+			<item value="log."/>
+			<item value="test.com.multi.board.BoardVO"/>
+			<item value="test.com.multi.board.comments.CommentsVO"/>
+			<item value="test.com.multi.member.MemberVO"/>
+			<item value="id=&quot;B_"/>
+			<item value="test.com.board.comments.CommentsVO"/>
+			<item value="log.info(vo.toString());"/>
+			<item value="log.info"/>
+			<item value="board"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1039"/>
+		<item key="DIALOG_Y_ORIGIN" value="86"/>
+		<item key="DIALOG_WIDTH" value="340"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>
