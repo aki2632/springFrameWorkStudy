@@ -49,6 +49,8 @@ C:\MULTI_EDU_26\springFrameWork\work\.metadata\.plugins\org.eclipse.jst.jsp.core
 \spring02board\src\main\java
 C:\MULTI_EDU_20\springWork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3599618928.index
 \spring06mybatis_member\src\main\java
+C:\MULTI_EDU_26\springFrameWork\work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\273726073.index
+\spring09jdbc_oracle\src\main\java
 C:\MULTI_EDU_20\springWork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3695217121.index
 \spring08interceptor\src\main\java
 C:\MULTI_EDU_20\springWork\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1492421952.index
