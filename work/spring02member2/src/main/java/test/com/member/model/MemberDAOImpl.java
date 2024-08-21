@@ -11,14 +11,13 @@ import lombok.extern.slf4j.Slf4j;
 @Repository
 public class MemberDAOImpl implements MemberDAO {
 
-    // 임시로 메모리 내에서 데이터를 저장하기 위한 리스트
-    private List<MemberVO> members = new ArrayList<MemberVO>();
     private int idCounter = 0;
+    private List<MemberVO> members = new ArrayList<MemberVO>(); // 임시로 메모리 내에서 데이터를 저장하기 위한 리스트
 
     @Override
     public int insert(MemberVO vo) {
         log.info("insert()... {}", vo);
-        vo.setNum(++idCounter); // 가입 시 num 증가 
+        vo.setNum(idCounter++); // 가입 후 num 증가 
         members.add(vo);
         return 1; // Return success code
     }
