@@ -1,7 +1,9 @@
 package test.com.model;
 
 import java.text.DateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
 import org.slf4j.Logger;
@@ -32,6 +34,22 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
+		
+		TestVO vo2 = new TestVO();
+		vo2.setName("kim");
+		vo2.setAge(33);
+		
+		model.addAttribute("vo2",vo2);
+		
+		List<TestVO> list = new ArrayList<TestVO>();
+		for (int i = 0; i < 5; i++) {
+			TestVO vo = new TestVO();
+			vo.setName("kim"+i);
+			vo.setAge(33+i);
+			list.add(vo);
+		}
+		model.addAttribute("list",list);	
+		
 		
 		return "home";
 	}
