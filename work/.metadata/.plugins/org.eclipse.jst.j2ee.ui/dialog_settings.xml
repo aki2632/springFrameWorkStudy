@@ -3,7 +3,11 @@
 	<item key="J2EE_EXPORT_OVERWRITE" value="true"/>
 	<item key="J2EE_EXPORT_SOURCE" value="false"/>
 	<list key="J2EE_EXPORT_JST_WEB">
-		<item value="C:\MULTI_EDU_20\springWork\배표파일\spring19mysql_member.war"/>
+		<item value="C:\Users\aki26\Downloads\spring01hello\spring01hello.war"/>
 		<item value="C:\MULTI_EDU_20\springWork\배표파일\spring01hello.war"/>
+		<item value="C:\MULTI_EDU_20\springWork\배표파일\spring19mysql_member.war"/>
+	</list>
+	<list key="MRU_RUNTIME_STORE">
+		<item value="Apache Tomcat v9.0"/>
 	</list>
 </section>
