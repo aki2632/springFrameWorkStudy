@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<!-- TestBean3 tb07 = new TestBean3(); --> 
+	<bean id="tb07" class="test.com.bean.TestBean3">
+		<property name="list">
+			<list>
+				<value>kim1</value>
+				<value>kim2</value>
+				<value>kim3</value>
+			</list>
+		</property>
+		<property name="set">
+			<set>
+				<value>kim1</value>
+				<value>kim2</value>
+				<value>kim2</value>
+				<value>kim2</value>
+			</set>
+		</property>
+		<property name="map">
+			<map>
+				<entry key="num">
+					<value>1</value>
+				</entry>
+				<entry key="name">
+					<value>lee</value>
+				</entry>
+				<entry key="age">
+					<value>33</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+		
+</beans>

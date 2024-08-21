@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<bean id="c01" class="test.com.bean.Car"></bean>
+	
+	<bean id="c02" class="test.com.bean.Car">
+		<constructor-arg>
+			<value>1000</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>apple</value>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="c03" class="test.com.bean.Car">
+		<property name="price" value="1250"></property>
+		<property name="model" value="peach"></property>
+	</bean>
+	
+	
+	
+	<!-- MissionBean mb01 = new MissionBean(); --> 
+	<bean id="mb01" class="test.com.bean.MissionBean"></bean>
+	
+	<!-- MissionBean mb02 = new MissionBean(); -->
+	<bean id="mb02" class="test.com.bean.MissionBean">
+		<constructor-arg>
+			<ref bean="c02" />
+		</constructor-arg>
+	</bean>
+	
+	<!-- MissionBean mb03 = new MissionBean(); -->
+	<bean id="mb03" class="test.com.bean.MissionBean">
+		<property name="car" ref="c03"></property>
+	</bean>
+		
+</beans>

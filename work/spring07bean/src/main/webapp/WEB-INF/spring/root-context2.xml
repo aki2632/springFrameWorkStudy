@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<!-- Person p01 = new Person(); --> 
+	<bean id="p01" class="test.com.bean.Person"></bean>
+	
+	<!-- Person p02 = new Person("seoul", "010"); -->
+	<bean id="p02" class="test.com.bean.Person">
+		<constructor-arg>
+			<value>seoul</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>010</value>
+		</constructor-arg>
+	</bean>
+	
+	<!-- Person p03 = new Person(); -->
+	<!-- p03.setAddress("busan"); -->
+	<!-- p03.setTel("011"); -->
+	<bean id="p03" class="test.com.bean.Person">
+		<property name="address" value="busan"></property>
+		<property name="tel" value="011"></property>
+	</bean>
+	
+	
+	
+	<!-- TestBean2 tb04 = new TestBean2(); --> 
+	<bean id="tb04" class="test.com.bean.TestBean2"></bean>
+	
+	<!-- TestBean2 tb05 = new TestBean2(); -->
+	<bean id="tb05" class="test.com.bean.TestBean2">
+		<constructor-arg>
+			<ref bean="p02" />
+		</constructor-arg>
+	</bean>
+	
+	<!-- TestBean2 tb06 = new TestBean2(); -->
+	<bean id="tb06" class="test.com.bean.TestBean2">
+		<property name="person" ref="p03"></property>
+	</bean>
+		
+</beans>

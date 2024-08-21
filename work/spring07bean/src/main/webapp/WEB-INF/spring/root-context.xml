@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<!-- TestBean tb01 = new TestBean(); --> 
+	<bean id="tb01" class="test.com.bean.TestBean"></bean>
+	
+	<!-- TestBean tb02 = new TestBean("kim", 33); -->
+	<bean id="tb02" class="test.com.bean.TestBean">
+		<constructor-arg>
+			<value>kim</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>33</value>
+		</constructor-arg>
+	</bean>
+	
+	<!-- TestBean tb03 = new TestBean(); -->
+	<!-- tb03.setName("lee"); -->
+	<!-- tb03.setAge(44); -->
+	<bean id="tb03" class="test.com.bean.TestBean">
+		<property name="name" value="lee"></property>
+		<property name="age" value="44"></property>
+	</bean>
+		
+</beans>
