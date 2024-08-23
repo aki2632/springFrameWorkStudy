@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=""/>
+		<item key="selection" value="p_"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="b_"/>
+			<item value="board/"/>
+			<item value="BoardVO"/>
+			<item value="B_"/>
+			<item value="vos"/>
 			<item value="log"/>
 			<item value="service"/>
 			<item value="System.out.println"/>
@@ -18,13 +23,13 @@
 			<item value="EUC-KR"/>
 			<item value="UTF-8"/>
 			<item value="// TODO Auto-generated method stub"/>
-			<item value="logger."/>
-			<item value="test.com.board.BoardVO"/>
-			<item value="test.com.board.comments.CommentsVO"/>
-			<item value="test.com.member.MemberVO"/>
-			<item value="id=&quot;"/>
 		</list>
 		<list key="replacehistory">
+			<item value="p_"/>
+			<item value="product/"/>
+			<item value="ProductVO"/>
+			<item value="P_"/>
+			<item value="list"/>
 			<item value=""/>
 			<item value="memberService"/>
 			<item value="log.info"/>
@@ -35,11 +40,6 @@
 			<item value="log.info(&quot;insert()....&quot;);"/>
 			<item value="log."/>
 			<item value="test.com.multi.board.BoardVO"/>
-			<item value="test.com.multi.board.comments.CommentsVO"/>
-			<item value="test.com.multi.member.MemberVO"/>
-			<item value="id=&quot;B_"/>
-			<item value="test.com.board.comments.CommentsVO"/>
-			<item value="log.info(vo.toString());"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
