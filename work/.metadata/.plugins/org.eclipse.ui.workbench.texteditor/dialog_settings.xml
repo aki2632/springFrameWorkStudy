@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="p_"/>
+		<item key="selection" value="member"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="b_"/>
-			<item value="board/"/>
-			<item value="BoardVO"/>
-			<item value="B_"/>
-			<item value="vos"/>
-			<item value="log"/>
-			<item value="service"/>
-			<item value="System.out.println"/>
-			<item value="info"/>
-			<item value="test.com.member"/>
-			<item value="oracle"/>
-			<item value="endRow"/>
-			<item value="EUC-KR"/>
-			<item value="UTF-8"/>
-			<item value="// TODO Auto-generated method stub"/>
+			<item value="product"/>
+			<item value="Product"/>
+			<item value="dao"/>
+			<item value=".p"/>
+			<item value="S_"/>
+			<item value="SampleVO"/>
+			<item value="s_"/>
+			<item value="fileUpload/"/>
+			<item value="sample"/>
+			<item value="test.com.fileUpload"/>
+			<item value="P_"/>
+			<item value="test.com.fileupload"/>
+			<item value="sample/"/>
+			<item value="fileupload/"/>
+			<item value="product/"/>
 		</list>
 		<list key="replacehistory">
+			<item value="member"/>
+			<item value="Member"/>
+			<item value="P_"/>
+			<item value="ProductVO"/>
 			<item value="p_"/>
 			<item value="product/"/>
-			<item value="ProductVO"/>
-			<item value="P_"/>
-			<item value="list"/>
+			<item value="product"/>
+			<item value="test.com.product"/>
+			<item value="S_"/>
+			<item value="test.com.fileUpload"/>
 			<item value=""/>
-			<item value="memberService"/>
-			<item value="log.info"/>
-			<item value="test.com.mysqlmember"/>
-			<item value="mysql"/>
-			<item value="pageBlock"/>
-			<item value="UTF-8"/>
-			<item value="log.info(&quot;insert()....&quot;);"/>
-			<item value="log."/>
-			<item value="test.com.multi.board.BoardVO"/>
+			<item value="fileUpload/"/>
+			<item value="sample/"/>
+			<item value="s_"/>
+			<item value="sample"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

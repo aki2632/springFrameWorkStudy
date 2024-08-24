@@ -56,7 +56,7 @@ div {
 </style>
 </head>
 <body>
-	<h1><%="게시글 목록 페이지"%></h1>
+	<h1><%="상품 목록 페이지"%></h1>
 	<br />
 	<jsp:include page="../top_menu.jsp" />
 	<form action="p_searchList.do">
