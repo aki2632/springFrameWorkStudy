@@ -52,5 +52,10 @@ public class MemberServiceImpl implements MemberService{
 		log.info("searchList()...");
 		return dao.searchList(searchKey, searchWord);
 	}
+	
+	public MemberVO idCheck(MemberVO vo) {
+		log.info("idCheck()...");
+		return dao.idCheck(vo);
+	}
 
 }

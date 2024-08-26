@@ -3,8 +3,10 @@ package test.com.member.controller;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,6 +14,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -139,9 +142,5 @@ public class MemberController {
 		
 		return "redirect:m_selectAll.do";
 	}
-	
-	//spring03board프로젝트도 지금과 똑같이 동작하도록 컴포넌트 추가해주세요.
-	
-	
 	
 }//end class

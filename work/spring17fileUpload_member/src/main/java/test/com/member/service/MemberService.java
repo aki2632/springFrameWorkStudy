@@ -13,5 +13,6 @@ public interface MemberService {
 	public MemberVO selectOne(MemberVO vo);
 	public List<MemberVO> selectAll();
 	public List<MemberVO> searchList(String searchKey,String searchWord);
+	public MemberVO idCheck(MemberVO vo);
 
 }

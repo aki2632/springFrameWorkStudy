@@ -63,5 +63,12 @@ public class MemberDAOimpl implements MemberDAO {
         }
         return list;
 	}
+	
+	@Override
+    public MemberVO idCheck(MemberVO vo) {
+		log.info("idCheck()....");
+		log.info("{}", vo);
+        return sqlSession.selectOne("M_IDCHECK", vo);
+    }
 
 }
