@@ -1,4 +1,164 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 23 Aug 2024 07:52:55 GMT</lastBuildDate><item><title><![CDATA[Spring Boot Releases Fix for CVE-2024-38807]]></title><link>https://spring.io/blog/2024/08/23/spring-boot-releases-fix-for-cve-2024-38807</link><guid isPermaLink="true">https://spring.io/blog/2024/08/23/spring-boot-releases-fix-for-cve-2024-38807</guid><dc:creator><![CDATA[Andy Wilkinson]]></dc:creator><pubDate>Fri, 23 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The Spring Boot team has released versions 3.2.9 and 3.3.3 that contain fixes for &lt;a href=&quot;https://spring.io/security/cve-2024-38807&quot;&gt;CVE-2024-38807&lt;/a&gt;, Signature Forgery Vulnerability in Spring Boot&apos;s Loader. For &lt;a href=&quot;https://tanzu.vmware.com/spring&quot;&gt;support&lt;/a&gt; customers, 2.7.22, 3.0.17, and 3.1.13 have also been released.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Boot 2.7.21, 3.0.16, and 3.1.13 available now]]></title><link>https://spring.io/blog/2024/08/23/spring-boot-2-7-21-3-0-16-and-3-1-13-available-now</link><guid isPermaLink="true">https://spring.io/blog/2024/08/23/spring-boot-2-7-21-3-0-16-and-3-1-13-available-now</guid><dc:creator><![CDATA[Andy Wilkinson]]></dc:creator><pubDate>Fri, 23 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team, I am pleased to announce that Spring Boot 2.7.22, 3.0.17, and 3.1.13 have been released for &lt;a href=&quot;https://tanzu.vmware.com/spring&quot;&gt;support&lt;/a&gt; customers. The releases are available from &lt;a href=&quot;https://packages.broadcom.com&quot;&gt;https://packages.broadcom.com&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Spring]]></title><description><![CDATA[Level up your Java code and explore what Spring can do for you.]]></description><link>https://spring.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 26 Aug 2024 00:30:08 GMT</lastBuildDate><item><title><![CDATA[Spring AI 1.0.0 M2 released]]></title><link>https://spring.io/blog/2024/08/23/spring-ai-1-0-0-m2-released</link><guid isPermaLink="true">https://spring.io/blog/2024/08/23/spring-ai-1-0-0-m2-released</guid><dc:creator><![CDATA[Mark Pollack]]></dc:creator><pubDate>Fri, 23 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;We are happy to announce the 1.0.0 Milestone 2 release of Spring AI.&lt;/p&gt;
+&lt;p&gt;This release brings significant enhancements and new features across various areas.&lt;/p&gt;
+&lt;h2 id=&quot;key-focus-observability&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#key-focus-observability&quot; aria-label=&quot;key focus observability permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Key Focus: Observability&lt;/h2&gt;
+&lt;p&gt;A major emphasis for this release has been on observability functionality, crucial for monitoring, debugging, and optimizing AI applications. Comprehensive observability features have been introduced for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ChatClient&lt;/code&gt; (including Advisors)&lt;/li&gt;
+&lt;li&gt;Chat Models (OpenAI, Ollama, Mistral, Anthropic)&lt;/li&gt;
+&lt;li&gt;Embedding Models&lt;/li&gt;
+&lt;li&gt;Image Generation Models&lt;/li&gt;
+&lt;li&gt;Vector Stores&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Support for additional &lt;code&gt;ChatModel&lt;/code&gt; implementation will be added in future releases.&lt;/p&gt;
+&lt;p&gt;Here are some samples showcasing this functionality to get started&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/tzolov/ai-observability-demo&quot;&gt;Observability Demo&lt;/a&gt; from Christian Tzolov&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/ThomasVitale/llm-apps-java-spring-ai/tree/main/10-observability&quot;&gt;Observability Demos&lt;/a&gt; from Thomas Vitale&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Grazie mille (a thousand thanks ;) to Thomas Vitale for his significant efforts in contributing to the Observability feature!&lt;/p&gt;
+&lt;p&gt;Here is a screenshot showing the tracing of the following code&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var response = chatClient.prompt()
+	.user(&quot;How does Carina work?&quot;)
+	.advisors(new QuestionAnswerAdvisor(vectorStore, SearchRequest.defaults()))
+	.advisors(new PromptChatMemoryAdvisor(chatMemory))
+	.call()
+	.chatResponse();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&quot;//images.ctfassets.net/mnrwi97vnhts/2hk6LlyJFSL8hlzjGiSMaI/f136ab86696b1b59a5efbf94c8373256/spring-ai-blog-observability3.png&quot; alt=&quot;Grafana view of Spring AI Trace&quot;&gt;&lt;/p&gt;
+&lt;p&gt;In the trace view, you can see the nesting of the &lt;code&gt;ChatClient&lt;/code&gt; call which first passes through two advisors, the &lt;code&gt;QuestionAnswerAdvisor&lt;/code&gt; that does an embedding request and a query to the PGVector database.  Then it passes through the &lt;code&gt;PromptChatMemoryAdvisor&lt;/code&gt;, which takes very little time, and then finally to the calling of the OpenAI &lt;code&gt;gpt-4o&lt;/code&gt; model.&lt;/p&gt;
+&lt;p&gt;You can find all the details what metrics are available in the &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/observabilty/index.html&quot;&gt;Observability Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;core-improvements&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#core-improvements&quot; aria-label=&quot;core improvements permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Core improvements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New:&lt;/strong&gt; &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/etl-pipeline.html#_markdown&quot;&gt;MarkdownDocumentReader&lt;/a&gt; for ETL pipelines&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New:&lt;/strong&gt; Cassandra-backed &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/chatclient.html#_chat_memory&quot;&gt;chat memory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New:&lt;/strong&gt; Typesense testcontainer integration&lt;/li&gt;
+&lt;li&gt;ChatClient enhancements
+&lt;ul&gt;
+&lt;li&gt;Function registration with explicit input type&lt;/li&gt;
+&lt;li&gt;Dynamic filter expressions for QuestionAnswerAdvisor&lt;/li&gt;
+&lt;li&gt;Customizable logger advisor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Improved API design of ResponseMetadata and the Message object hierarchy&lt;/li&gt;
+&lt;li&gt;Embedding format changed from List&lt;Double&gt; to float[]&lt;/li&gt;
+&lt;li&gt;Added JSON array handling to JsonReader&lt;/li&gt;
+&lt;li&gt;Options improvements
+&lt;ul&gt;
+&lt;li&gt;ChatOptions: Enhanced metadata configuration for defined models&lt;/li&gt;
+&lt;li&gt;EmbeddingOptions: Added model and dimensions options&lt;/li&gt;
+&lt;li&gt;ImageOptions: Added style option&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ChatOptions added to PromptTemplate create methods&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;chatmodel-enhancements&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#chatmodel-enhancements&quot; aria-label=&quot;chatmodel enhancements permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ChatModel Enhancements&lt;/h2&gt;
+&lt;p&gt;General improvements have been made across the chat model infrastructure classes. Key feature enhancements for specific models include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Anthropic: Added Function calling support&lt;/li&gt;
+&lt;li&gt;Azure Open AI
+&lt;ul&gt;
+&lt;li&gt;Function calling integration&lt;/li&gt;
+&lt;li&gt;Updated to Azure OpenAI Client library 1.0 beta-10&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New:&lt;/strong&gt; &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/audio/transcriptions/azure-openai-transcriptions.html&quot;&gt;Transcription support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Added image handling for byte arrays&lt;/li&gt;
+&lt;li&gt;Added Multimodality support&lt;/li&gt;
+&lt;li&gt;Added OpenAI API key and MS-Entra authentication options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Amazon Bedrock: Updated &lt;code&gt;bedrockruntime&lt;/code&gt; version to 2.26.7&lt;/li&gt;
+&lt;li&gt;HuggingFace: Added Boot starter&lt;/li&gt;
+&lt;li&gt;Minimax
+&lt;ul&gt;
+&lt;li&gt;Improved function calling&lt;/li&gt;
+&lt;li&gt;Added Web search tool support&lt;/li&gt;
+&lt;li&gt;Introduced sensitive information masking option&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Mistral
+&lt;ul&gt;
+&lt;li&gt;Added function calling support&lt;/li&gt;
+&lt;li&gt;Documentation for using Mistral AI via Spring AI&apos;s OpenAI client&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New:&lt;/strong&gt; &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/chat/moonshot-chat.html&quot;&gt;Moonshot chat model with function calling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ollama
+&lt;ul&gt;
+&lt;li&gt;Function calling support&lt;/li&gt;
+&lt;li&gt;Batch embedding request functionality&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;OpenAI
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;New:&lt;/strong&gt; &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/moderation/openai-moderation.html&quot;&gt;Moderation API support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updates for partially compliant OpenAI model providers&lt;/li&gt;
+&lt;li&gt;Usage statistics for streaming chat responses&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/chat/groq-chat.html&quot;&gt;Groq model provider integration with documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Configurable URL paths for Chat and Embedding models&lt;/li&gt;
+&lt;li&gt;Documentation for using &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/chat/mistralai-chat.html#_openai_api_compatibility&quot;&gt;Mistral AI&lt;/a&gt; and &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/chat/nvidia-chat.html&quot;&gt;NVIDIA LLM API&lt;/a&gt; via Spring AI&apos;s OpenAI client&lt;/li&gt;
+&lt;li&gt;Parallel function calling support&lt;/li&gt;
+&lt;li&gt;Organization ID and Project ID authentication options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New:&lt;/strong&gt; QianFan model for &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/chat/qianfan-chat.html&quot;&gt;chat&lt;/a&gt;, &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/embeddings/qianfan-embeddings.html&quot;&gt;embeddings&lt;/a&gt;, and &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/image/qianfan-image.html&quot;&gt;image&lt;/a&gt; generation.&lt;/li&gt;
+&lt;li&gt;ONNX - Improved transformer embedding model&lt;/li&gt;
+&lt;li&gt;Google Vertex AI
+&lt;ul&gt;
+&lt;li&gt;Add &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/embeddings/vertexai-embeddings-text.html&quot;&gt;Embedding model&lt;/a&gt; support&lt;/li&gt;
+&lt;li&gt;Updated Google Vertex SDK to 26.41.0&lt;/li&gt;
+&lt;li&gt;Resolved parallel function calling&lt;/li&gt;
+&lt;li&gt;Added system message support&lt;/li&gt;
+&lt;li&gt;Added ResponeMimeType in chat options&lt;/li&gt;
+&lt;li&gt;Added Google search retrieval tool support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ZhiPu: Added function calling support&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks for &lt;a href=&quot;https://github.com/mxsl-gr&quot;&gt;Geng Rong&lt;/a&gt; for the Moonshot, QianFan, and ZhiPu model support.&lt;/p&gt;
+&lt;h2 id=&quot;vector-store-improvements&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vector-store-improvements&quot; aria-label=&quot;vector store improvements permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Vector Store improvements&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Breaking Change&lt;/strong&gt;: Default value for vector store configuration property &lt;code&gt;initialize-schema&lt;/code&gt; changed to false.&lt;/li&gt;
+&lt;li&gt;Introduced &lt;code&gt;BatchingStrategy&lt;/code&gt; for efficient document embedding operations
+&lt;ul&gt;
+&lt;li&gt;Added &lt;code&gt;TokenCountBatchingStrategy&lt;/code&gt; implementation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cassandra: Added &lt;code&gt;CassandraChatMemory&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Chroma:
+&lt;ul&gt;
+&lt;li&gt;Upgraded from use of &lt;code&gt;RestTemplate&lt;/code&gt; to &lt;code&gt;RestClient&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Integrated ChromaDB&apos;s &lt;code&gt;CHROMA_SERVER_AUTHN_CREDENTIALS&lt;/code&gt; environment variable for Docker Compose and Testcontainers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gemfire: Enhanced functionality&lt;/li&gt;
+&lt;li&gt;Milvus: Removed flush operations to prevent excessive segment creation&lt;/li&gt;
+&lt;li&gt;MongoDB: Improved efficiency using &lt;code&gt;org.bson.Documents&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Neo4j - Updated to latest Cypher-DSL&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New:&lt;/strong&gt; &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/vectordbs/opensearch.html&quot;&gt;Opensearch VectorStore implementation&lt;/a&gt;  Thanks &lt;a href=&quot;https://github.com/JM-Lab&quot;&gt;Jemin Huh&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New:&lt;/strong&gt; &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/vectordbs/oracle.html&quot;&gt;Oracle 23ai VectorStore implementation&lt;/a&gt;  Thanks &lt;a href=&quot;https://github.com/loiclefevre&quot;&gt;Lo?c Lef?vre&lt;/a&gt;!&lt;/li&gt;
+&lt;li&gt;PGVector
+&lt;ul&gt;
+&lt;li&gt;Introduced customizable schema, table, and index names&lt;/li&gt;
+&lt;li&gt;Fixed IN/NOT IN filters for JSON queries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pinecone
+&lt;ul&gt;
+&lt;li&gt;Added configurable content and distance metadata fields&lt;/li&gt;
+&lt;li&gt;Added AOT hints&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Redis: Enabled use of standard &lt;code&gt;RedisAutoConfiguration&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New:&lt;/strong&gt; &lt;a href=&quot;https://docs.spring.io/spring-ai/reference/api/vectordbs/typesense.html&quot;&gt;Typesense support&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;general-improvements&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#general-improvements&quot; aria-label=&quot;general improvements permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;General improvements&lt;/h2&gt;
+&lt;p&gt;Many refactoring, bug fixing, documentation enhancements across the board by a wide range of contributors. If we haven¡¯t gotten to your PR yet, we will, please be patient. Thanks to&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/N/A&quot;&gt;Mohammed, Ahmed Yousri Salama&lt;/a&gt;, &lt;a href=&quot;https://github.com/AshwinKrishnaK&quot;&gt;Ashwin Krishna K&lt;/a&gt;, &lt;a href=&quot;https://github.com/BlackBean99&quot;&gt;blackbean99&lt;/a&gt;, &lt;a href=&quot;https://github.com/Cho-D-YoungRae&quot;&gt;Youngrae Cho&lt;/a&gt;, &lt;a href=&quot;https://github.com/DadySu&quot;&gt;DadySu&lt;/a&gt;, &lt;a href=&quot;https://github.com/Flyingblu&quot;&gt;Jerry (Flyingblu)&lt;/a&gt;, &lt;a href=&quot;https://github.com/Grogdunn&quot;&gt;Lorenzo Caenazzo&lt;/a&gt;, &lt;a href=&quot;https://github.com/JM-Lab&quot;&gt;Jemin Huh&lt;/a&gt;, &lt;a href=&quot;https://github.com/JavaProgrammerLB&quot;&gt;Bill Lau&lt;/a&gt;, &lt;a href=&quot;https://github.com/JayPark7821&quot;&gt;JayPark7821&lt;/a&gt;, &lt;a href=&quot;https://github.com/KAMO030&quot;&gt;KAMOsama&lt;/a&gt;, &lt;a href=&quot;https://github.com/Kirboyyy&quot;&gt;David Caudill&lt;/a&gt;, &lt;a href=&quot;https://github.com/Lee-ChungMu&quot;&gt;Lee-ChungMu&lt;/a&gt;, &lt;a href=&quot;https://github.com/PabloSanchi&quot;&gt;Pablo Sanchi&lt;/a&gt;, &lt;a href=&quot;https://github.com/Seol-JY&quot;&gt;Seol_JY&lt;/a&gt;, &lt;a href=&quot;https://github.com/TarasVovk669&quot;&gt;TarasVovk669&lt;/a&gt;, &lt;a href=&quot;https://github.com/ThomasVitale&quot;&gt;Thomas Vitale&lt;/a&gt;, &lt;a href=&quot;https://github.com/TimJ0212&quot;&gt;TimJ0212&lt;/a&gt;, &lt;a href=&quot;https://github.com/alexcheng1982&quot;&gt;Fu Cheng&lt;/a&gt;, &lt;a href=&quot;https://github.com/ashni-mongodb&quot;&gt;ashni&lt;/a&gt;, &lt;a href=&quot;https://github.com/bmoussaud&quot;&gt;Benoit Moussaud&lt;/a&gt;, &lt;a href=&quot;https://github.com/chemicL&quot;&gt;Dariusz J?drzejczyk&lt;/a&gt;, &lt;a href=&quot;https://github.com/cocomongg&quot;&gt;cocomongg&lt;/a&gt;, &lt;a href=&quot;https://github.com/cyPark95&quot;&gt;ChanYeong&lt;/a&gt;, &lt;a href=&quot;https://github.com/dafriz&quot;&gt;David Afriz&lt;/a&gt;, &lt;a href=&quot;https://github.com/devholic22&quot;&gt;devholic22&lt;/a&gt;, &lt;a href=&quot;https://github.com/didalgolab&quot;&gt;Mariusz Bernacki&lt;/a&gt;, &lt;a href=&quot;https://github.com/dongfeng3692&quot;&gt;dongfeng3692&lt;/a&gt;, &lt;a href=&quot;https://github.com/dsyer&quot;&gt;Dave Syer&lt;/a&gt;, &lt;a href=&quot;https://github.com/eddumelendez&quot;&gt;Edd? Mel?ndez&lt;/a&gt;, &lt;a href=&quot;https://github.com/elmahdi43&quot;&gt;El Mahdi Oukhamou&lt;/a&gt;, &lt;a href=&quot;https://github.com/fing9&quot;&gt;Seongmin Kim&lt;/a&gt;, &lt;a href=&quot;https://github.com/fjtorres-zerocopy&quot;&gt;Francisco Javier Torres&lt;/a&gt;, &lt;a href=&quot;https://github.com/geetrawat&quot;&gt;geetrawat&lt;/a&gt;, &lt;a href=&quot;https://github.com/habuma&quot;&gt;Craig Walls&lt;/a&gt;, &lt;a href=&quot;https://github.com/hakusai22&quot;&gt;yinpeng&lt;/a&gt;, &lt;a href=&quot;https://github.com/impactCn&quot;&gt;Sinsy&lt;/a&gt;, &lt;a href=&quot;https://github.com/izeye&quot;&gt;Johnny Lim&lt;/a&gt;, &lt;a href=&quot;https://github.com/jo-kim&quot;&gt;jo-kim&lt;/a&gt;, &lt;a href=&quot;https://github.com/joshlong&quot;&gt;Josh Long&lt;/a&gt;, &lt;a href=&quot;https://github.com/jyami-kim&quot;&gt;KimMinjeong&lt;/a&gt;, &lt;a href=&quot;https://github.com/kirkster96&quot;&gt;Cameron Kirk&lt;/a&gt;, &lt;a href=&quot;https://github.com/l-trotta&quot;&gt;Laura Trotta&lt;/a&gt;, &lt;a href=&quot;https://github.com/loiclefevre&quot;&gt;Lo?c Lef?vre&lt;/a&gt;, &lt;a href=&quot;https://github.com/loveysuby&quot;&gt;Hyoseop Song&lt;/a&gt;, &lt;a href=&quot;https://github.com/luocongqiu&quot;&gt;luocq3&lt;/a&gt;, &lt;a href=&quot;https://github.com/michael-simons&quot;&gt;Michael Simons&lt;/a&gt;, &lt;a href=&quot;https://github.com/michaelsembwever&quot;&gt;mck&lt;/a&gt;, &lt;a href=&quot;https://github.com/moon0cean&quot;&gt;Jonatan Soto&lt;/a&gt;, &lt;a href=&quot;https://github.com/muthuishere&quot;&gt;Muthukumaran Navaneethakrishnan&lt;/a&gt;, &lt;a href=&quot;https://github.com/mxsl-gr&quot;&gt;Geng Rong&lt;/a&gt;, &lt;a href=&quot;https://github.com/nichozhan&quot;&gt;Nicholas Zhan&lt;/a&gt;, &lt;a href=&quot;https://github.com/ochnios&quot;&gt;Szymon Ochnio&lt;/a&gt;, &lt;a href=&quot;https://github.com/pgerhard&quot;&gt;Philipp Gerhard&lt;/a&gt;, &lt;a href=&quot;https://github.com/piotrooo&quot;&gt;Piotr Olaszewski&lt;/a&gt;, &lt;a href=&quot;https://github.com/rapenumaka&quot;&gt;rapenumaka&lt;/a&gt;, &lt;a href=&quot;https://github.com/rivkode&quot;&gt;rivkode&lt;/a&gt;, &lt;a href=&quot;https://github.com/rozza&quot;&gt;Ross Lawley&lt;/a&gt;, &lt;a href=&quot;https://github.com/rubin0&quot;&gt;Andrea Rubino&lt;/a&gt;, &lt;a href=&quot;https://github.com/sobychacko&quot;&gt;Soby Chacko&lt;/a&gt;, &lt;a href=&quot;https://github.com/status2xx&quot;&gt;xiaoxin&lt;/a&gt;, &lt;a href=&quot;https://github.com/stefanvassilev&quot;&gt;Stefan Vassilev&lt;/a&gt;, &lt;a href=&quot;https://github.com/timotheekelly&quot;&gt;Tim Kelly&lt;/a&gt;, &lt;a href=&quot;https://github.com/turchinc&quot;&gt;Chris Turchin&lt;/a&gt;, &lt;a href=&quot;https://github.com/uzhuraul&quot;&gt;uzhuraul&lt;/a&gt;, &lt;a href=&quot;https://github.com/v891&quot;&gt;Veerendra Vellanki&lt;/a&gt;, &lt;a href=&quot;https://github.com/wb04307201&quot;&gt;?ÚÏ&lt;/a&gt;, &lt;a href=&quot;https://github.com/xieyucan&quot;&gt;xiehui1956&lt;/a&gt;, &lt;a href=&quot;https://github.com/xsg22&quot;&gt;xsg22&lt;/a&gt;, &lt;a href=&quot;https://github.com/yeseong0412&quot;&gt;¾ç¿¹¼º&lt;/a&gt;, &lt;a href=&quot;https://github.com/yulshi&quot;&gt;Yulong Shi&lt;/a&gt;, &lt;a href=&quot;https://github.com/zbqmgldjfh&quot;&gt;jiwoo&lt;/a&gt;, &lt;a href=&quot;https://github.com/zlzzlzz2l&quot;&gt;zlzzlzz2l&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Modulith 1.3 M2, 1.2.3, and 1.1.8 released]]></title><link>https://spring.io/blog/2024/08/23/spring-modulith-1-3-m2-1-2-3-and-1-1-8-released</link><guid isPermaLink="true">https://spring.io/blog/2024/08/23/spring-modulith-1-3-m2-1-2-3-and-1-1-8-released</guid><dc:creator><![CDATA[Oliver Drotbohm]]></dc:creator><pubDate>Fri, 23 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;It is my pleasure to announce the availability of Spring Modulith 1.3 M2, 1.2.3, and 1.1.8. They all contain bug fixes and upgrades to the latest versions of dependencies. Here are the most important features of the releases:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Support for nested application modules (1.3 M2 only). See the &lt;a href=&quot;https://docs.spring.io/spring-modulith/reference/1.3/fundamentals.html#modules.nested&quot;&gt;reference documentation&lt;/a&gt; for details. ? &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/issues/578&quot;&gt;GH-578&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Event publication completion now issues a by-id query to significantly improve performance and reduce load on the database (1.3 M2 only). ? &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/issues/258&quot;&gt;GH-258&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Minor performance improvements for event completion (all releases). ? &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/issues/749&quot;&gt;GH-749&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For details, please check out the change logs for &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/releases/tag/1.3.0-M2&quot;&gt;1.3 M2&lt;/a&gt;, &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/releases/tag/1.2.3&quot;&gt;1.2.3&lt;/a&gt;, and &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/releases/tag/1.1.8&quot;&gt;1.1.8&lt;/a&gt;. We appreciate any kind of feedback, in particular regarding the milestone release, in the GitHub &lt;a href=&quot;https://github.com/spring-projects/spring-modulith/discussions&quot;&gt;discussions&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Boot Releases Fix for CVE-2024-38807]]></title><link>https://spring.io/blog/2024/08/23/spring-boot-releases-fix-for-cve-2024-38807</link><guid isPermaLink="true">https://spring.io/blog/2024/08/23/spring-boot-releases-fix-for-cve-2024-38807</guid><dc:creator><![CDATA[Andy Wilkinson]]></dc:creator><pubDate>Fri, 23 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The Spring Boot team has released versions 3.2.9 and 3.3.3 that contain fixes for &lt;a href=&quot;https://spring.io/security/cve-2024-38807&quot;&gt;CVE-2024-38807&lt;/a&gt;, Signature Forgery Vulnerability in Spring Boot&apos;s Loader. For &lt;a href=&quot;https://tanzu.vmware.com/spring&quot;&gt;support&lt;/a&gt; customers, 2.7.22, 3.0.17, and 3.1.13 have also been released.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Boot 2.7.21, 3.0.16, and 3.1.13 available now]]></title><link>https://spring.io/blog/2024/08/23/spring-boot-2-7-21-3-0-16-and-3-1-13-available-now</link><guid isPermaLink="true">https://spring.io/blog/2024/08/23/spring-boot-2-7-21-3-0-16-and-3-1-13-available-now</guid><dc:creator><![CDATA[Andy Wilkinson]]></dc:creator><pubDate>Fri, 23 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team, I am pleased to announce that Spring Boot 2.7.22, 3.0.17, and 3.1.13 have been released for &lt;a href=&quot;https://tanzu.vmware.com/spring&quot;&gt;support&lt;/a&gt; customers. The releases are available from &lt;a href=&quot;https://packages.broadcom.com&quot;&gt;https://packages.broadcom.com&lt;/a&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Spring Boot &lt;a href=&quot;https://enterprise.spring.io/projects/spring-boot/changelog/2.7.22&quot;&gt;2.7.22&lt;/a&gt; ships with 17 bug fixes and dependency upgrades.&lt;/li&gt;
 &lt;li&gt;Spring Boot &lt;a href=&quot;https://enterprise.spring.io/projects/spring-boot/changelog/3.0.17&quot;&gt;3.0.17&lt;/a&gt; ships with 35 bug fixes and dependency upgrades.&lt;/li&gt;
@@ -141,20 +301,4 @@ logging.structured.ecs.service.node-name=Primary
 &lt;p&gt;If you&apos;re interested in helping out, check out the &lt;a href=&quot;https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution&quot;&gt;&quot;ideal for contribution&quot; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href=&quot;https://stackoverflow.com&quot;&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href=&quot;https://stackoverflow.com/tags/spring-boot&quot;&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href=&quot;https://gitter.im/spring-projects/spring-boot&quot;&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://spring.io/projects/spring-boot/&quot;&gt;Project Page&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-boot&quot;&gt;GitHub&lt;/a&gt; | &lt;a href=&quot;https://github.com/spring-projects/spring-boot/issues&quot;&gt;Issues&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-boot/docs/3.2.9/reference/html&quot;&gt;Documentation&lt;/a&gt; | &lt;a href=&quot;https://stackoverflow.com/questions/tagged/spring-boot&quot;&gt;Stack Overflow&lt;/a&gt; | &lt;a href=&quot;https://gitter.im/spring-projects/spring-boot&quot;&gt;Gitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Session 3.3.2 and 3.2.5 are available now]]></title><link>https://spring.io/blog/2024/08/21/spring-session-3-3-2-and-3-2-5-are-available-now</link><guid isPermaLink="true">https://spring.io/blog/2024/08/21/spring-session-3-3-2-and-3-2-5-are-available-now</guid><dc:creator><![CDATA[Marcus Hert Da Coregio]]></dc:creator><pubDate>Wed, 21 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that Spring Session 3.3.2 and 3.2.5 are available now. In all cases, the releases are mostly composed of bug fixes, dependency upgrades, and documentation improvements.&lt;/p&gt;
 &lt;p&gt;To learn more, please visit the &lt;a href=&quot;https://github.com/spring-projects/spring-session/releases/tag/3.3.2&quot;&gt;3.3.2&lt;/a&gt;, and &lt;a href=&quot;https://github.com/spring-projects/spring-session/releases/tag/3.2.5&quot;&gt;3.2.5&lt;/a&gt; release summaries.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://projects.spring.io/spring-session/&quot;&gt;Project Site&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-session/reference/&quot;&gt;Reference&lt;/a&gt; | &lt;a href=&quot;http://stackoverflow.com/questions/tagged/spring-session&quot;&gt;Help&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Session 3.4.0-M2 is available now]]></title><link>https://spring.io/blog/2024/08/21/spring-session-3-4-0-m2-is-available-now</link><guid isPermaLink="true">https://spring.io/blog/2024/08/21/spring-session-3-4-0-m2-is-available-now</guid><dc:creator><![CDATA[Marcus Hert Da Coregio]]></dc:creator><pubDate>Wed, 21 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that the second milestone of Spring Session 3.4 is released.&lt;/p&gt;
-&lt;p&gt;This second milestone brings the possibility to customize the Redis Session Expiration Policy bringing a more robust mechanism if needed when using Clustered Redis.&lt;/p&gt;
-&lt;p&gt;You can read more about it in the &lt;a href=&quot;https://docs.spring.io/spring-session/reference/3.4-SNAPSHOT/whats-new.html&quot;&gt;What&apos;s New section of the 3.4 documentation&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Spring Security 6.4.0-M2 is available now]]></title><link>https://spring.io/blog/2024/08/21/spring-security-6-4-0-m2-is-available-now</link><guid isPermaLink="true">https://spring.io/blog/2024/08/21/spring-security-6-4-0-m2-is-available-now</guid><dc:creator><![CDATA[Marcus Hert Da Coregio]]></dc:creator><pubDate>Wed, 21 Aug 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;On behalf of the team and everyone who has contributed, I am pleased to announce that the second milestone of Spring Security 6.4 is released.&lt;/p&gt;
-&lt;p&gt;This second milestone release brings several compelling features including:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Extended Annotation Expression Placeholders Support to to &lt;code&gt;@AuthenticationPrincipal&lt;/code&gt; and &lt;code&gt;@CurrentSecurityContext&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Use inline CSS for default login and logout page&lt;/li&gt;
-&lt;li&gt;SAML 2.0 Now Supports OpenSAML 4 and 5&lt;/li&gt;
-&lt;li&gt;Saml 2.0 Refreshable, Expiry-Aware Asserting Party Metadata Source&lt;/li&gt;
-&lt;li&gt;SAML 2.0 Cacheable RelyingPartyRegistrations&lt;/li&gt;
-&lt;li&gt;LDAP Supports UnboundID 7&lt;/li&gt;
-&lt;li&gt;Kotlin Supports &lt;code&gt;@PreFilter&lt;/code&gt; and &lt;code&gt;@PostFilter&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;OIDC Backchannel Logout Accepts &lt;code&gt;logout+jwt&lt;/code&gt; Tokens&lt;/li&gt;
-&lt;li&gt;Make protected resources requests with &lt;code&gt;RestClient&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And much more.&lt;/p&gt;
-&lt;p&gt;You can read more about each of these in the &lt;a href=&quot;https://docs.spring.io/spring-security/reference/6.4-SNAPSHOT/whats-new.html&quot;&gt;What&apos;s New section of the 6.4 documentation&lt;/a&gt;.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;&lt;a href=&quot;http://projects.spring.io/spring-session/&quot;&gt;Project Site&lt;/a&gt; | &lt;a href=&quot;https://docs.spring.io/spring-session/reference/&quot;&gt;Reference&lt;/a&gt; | &lt;a href=&quot;http://stackoverflow.com/questions/tagged/spring-session&quot;&gt;Help&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
